@@ -2,7 +2,7 @@
 #define TILE_H
 
 #include "../../engine/ecs/Entity.hpp"
-#include "../../game/components/TileTexture.hpp"
+#include "../components/TileTexture.hpp"
 #include "../components/TileTransform.hpp"
 #include <glm/ext/vector_int3.hpp>
 #include <string>
