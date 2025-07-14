@@ -12,7 +12,6 @@
 #include "../../utils/SSBOBuffer.hpp"
 #include "../../Simplex.hpp"
 #include "Camera.hpp"
-#include "../../Userinterface.hpp"
 
 struct bigModel : Model {
 	SSBO<unsigned int> ssbo;
@@ -35,7 +34,7 @@ struct Renderer : IComponent {
 
 		glm::mat4 projection = glm::mat4(1.0f);
 		if (Simplex::view.Camera != nullptr) {
-			projection = Simplex::view.Camera->GetComponent<Camera>()->CalculateProjection();
+			projection = Simplex::view.Camera->GetComponent<Camera>()->CalcualteScreenSpaceProjection();
 		}
 
 		shader.setVec4("color", glm::vec4(1.0f, 0.0f, 0.0f, 1.0f));

@@ -1,5 +1,5 @@
 #include "engine/Simplex.hpp"
-#include "scenes/MainScene.hpp"
+#include "game/scenes/MainScene.hpp"
 
 int main() {
 	Simplex::CreateWindow("Industria", 1280-190, 720-160);
