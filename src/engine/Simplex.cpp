@@ -3,12 +3,15 @@
 #include "ResourceManager.hpp"
 #include "Scene.hpp"
 #include "View.hpp"
-#include <cstddef>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <string>
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
 namespace Simplex {
+float persistence = 0.1f;
 
 View view;
 Input input;
@@ -39,10 +42,17 @@ void Loop() {
 		firstLoop = false;
 	}
 	while (!view.ShouldQuit()) {
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui_ImplGlfw_NewFrame();
+		ImGui::NewFrame();
+		input.PollEvents();
+
 		view.ClearColor(glm::vec4(0.2f, 0.3f, 0.3f, 1.0f));
 		currentScene.Update();
 
-		input.PollEvents();
+		ImGui::Render();
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
 		view.SwapBuffers();
 	}
 	Quit();

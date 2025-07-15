@@ -27,8 +27,8 @@ struct Camera : public IComponent {
 	Transform *transform;
 
 	float zoom = 50.0f;
-	float scrollSensitivity = 0.1f;
-    float maxZoom = 4.0f;
+	float scrollSensitivity = 0.5f;
+	float maxZoom = 4.0f;
 
 	glm::vec2 lastMousePos = glm::vec2(0, 0);
 
@@ -57,21 +57,26 @@ struct Camera : public IComponent {
 	}
 
 	glm::mat4 CalcualteScreenSpaceProjection() {
-        glm::mat4 projection = glm::ortho(0.0f, (float)Simplex::view.Width, (float)Simplex::view.Height, 0.0f, -100.0f, 100.0f);
+		glm::mat4 projection = glm::ortho(0.0f, (float)Simplex::view.Width, (float)Simplex::view.Height, 0.0f, -100.0f, 100.0f);
 		return projection;
 	}
 
 	void Start() override {
 		transform = entity->GetComponent<Transform>();
 		Simplex::input.AddScrollCallback([&](float yOffset) -> void {
-			zoom += ((float)yOffset * scrollSensitivity * zoom) / 10.0f;
-            zoom = std::max(zoom, maxZoom);
+			UpdateZoom(yOffset);
 		});
 	}
+
+	void UpdateZoom(float yOffset) {
+		zoom += ((float)yOffset * scrollSensitivity * zoom) / 10.0f;
+		zoom = std::max(zoom, maxZoom);
+	}
+
 	void Update() override {
 		glm::vec2 mousePos = Simplex::view.GetMousePosition();
 
-		if (Simplex::input.MouseButtonDown(GLFW_MOUSE_BUTTON_3)) {
+		if (Simplex::input.MouseButtonDown(GLFW_MOUSE_BUTTON_1)) {
 			glm::vec2 dragOffset = lastMousePos - mousePos;
 			transform->Position += glm::vec3(dragOffset / zoom, 0.0f);
 		}

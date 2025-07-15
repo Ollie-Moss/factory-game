@@ -4,6 +4,7 @@
 #include "../../engine/ecs/IComponent.hpp"
 #include "../entities/TileEntity.hpp"
 #include "ChunkTransform.hpp"
+#include "../utils/GeneratorSettings.hpp"
 
 struct ChunkRenderer;
 
@@ -17,7 +18,7 @@ struct Chunk : IComponent {
 	Chunk(ChunkRenderer *renderer, ChunkTransform *transform) : renderer(renderer),
 																transform(transform) {};
 
-	void Generate(int scaleFactor = 1);
+	void Generate(GeneratorSettings settings);
 
 	void Update() override;
 };

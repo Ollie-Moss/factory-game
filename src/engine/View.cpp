@@ -3,6 +3,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
 void View::Init(std::string title, int width, int height) {
 	Width = width;
@@ -35,11 +38,23 @@ void View::Init(std::string title, int width, int height) {
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glfwSetFramebufferSizeCallback(window, View::FramebufferSizeCallback);
+
+	const char *glsl_version = "#version 330";
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO &io = ImGui::GetIO();
+
+	// Setup ImGui style
+	ImGui::StyleColorsDark();
+
+	// Setup Platform/Renderer bindings
+	ImGui_ImplGlfw_InitForOpenGL(window, true);
+	ImGui_ImplOpenGL3_Init(glsl_version);
 }
 
 void View::FramebufferSizeCallback(GLFWwindow *window, int newWidth, int newHeight) {
-    Simplex::view.Width = newWidth;
-    Simplex::view.Height = newHeight;
+	Simplex::view.Width = newWidth;
+	Simplex::view.Height = newHeight;
 	glViewport(0, 0, Simplex::view.Width, Simplex::view.Height);
 }
 
@@ -56,6 +71,9 @@ bool View::ShouldQuit() {
 }
 
 void View::Quit() {
+	ImGui_ImplOpenGL3_Shutdown();
+	ImGui_ImplGlfw_Shutdown();
+	ImGui::DestroyContext();
 	glfwTerminate();
 }
 

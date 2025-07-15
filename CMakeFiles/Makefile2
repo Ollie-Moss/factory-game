@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/ollie/workspace/factory-game
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyGameEngine.dir/all
+all: CMakeFiles/build.exec.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyGameEngine.dir/clean
+clean: CMakeFiles/build.exec.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyGameEngine.dir
+# Target rules for target CMakeFiles/build.exec.dir
 
 # All Build rule for target.
-CMakeFiles/MyGameEngine.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target MyGameEngine"
-.PHONY : CMakeFiles/MyGameEngine.dir/all
+CMakeFiles/build.exec.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target build.exec"
+.PHONY : CMakeFiles/build.exec.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyGameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ollie/workspace/factory-game/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGameEngine.dir/all
+CMakeFiles/build.exec.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ollie/workspace/factory-game/CMakeFiles 23
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/build.exec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ollie/workspace/factory-game/CMakeFiles 0
-.PHONY : CMakeFiles/MyGameEngine.dir/rule
+.PHONY : CMakeFiles/build.exec.dir/rule
 
 # Convenience name for target.
-MyGameEngine: CMakeFiles/MyGameEngine.dir/rule
-.PHONY : MyGameEngine
+build.exec: CMakeFiles/build.exec.dir/rule
+.PHONY : build.exec
 
 # clean rule for target.
-CMakeFiles/MyGameEngine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/clean
-.PHONY : CMakeFiles/MyGameEngine.dir/clean
+CMakeFiles/build.exec.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/clean
+.PHONY : CMakeFiles/build.exec.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

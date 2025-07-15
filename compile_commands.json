@@ -1,0 +1,134 @@
+[
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/include/SimplexNoise.cpp.o -c /home/ollie/workspace/factory-game/include/SimplexNoise.cpp",
+  "file": "/home/ollie/workspace/factory-game/include/SimplexNoise.cpp",
+  "output": "CMakeFiles/build.exec.dir/include/SimplexNoise.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/cc  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include  -o CMakeFiles/build.exec.dir/include/glad.c.o -c /home/ollie/workspace/factory-game/include/glad.c",
+  "file": "/home/ollie/workspace/factory-game/include/glad.c",
+  "output": "CMakeFiles/build.exec.dir/include/glad.c.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/Input.cpp.o -c /home/ollie/workspace/factory-game/src/engine/Input.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/Input.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/Input.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/ResourceManager.cpp.o -c /home/ollie/workspace/factory-game/src/engine/ResourceManager.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/ResourceManager.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/ResourceManager.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/Scene.cpp.o -c /home/ollie/workspace/factory-game/src/engine/Scene.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/Scene.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/Scene.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/Simplex.cpp.o -c /home/ollie/workspace/factory-game/src/engine/Simplex.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/Simplex.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/Simplex.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/View.cpp.o -c /home/ollie/workspace/factory-game/src/engine/View.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/View.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/View.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/ecs/Entity.cpp.o -c /home/ollie/workspace/factory-game/src/engine/ecs/Entity.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/ecs/Entity.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/ecs/Entity.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/engine/utils/Texture.cpp.o -c /home/ollie/workspace/factory-game/src/engine/utils/Texture.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/engine/utils/Texture.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/engine/utils/Texture.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/game/components/BuildSystem.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/BuildSystem.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/game/components/BuildSystem.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/game/components/BuildSystem.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/game/components/Chunk.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/Chunk.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/game/components/Chunk.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/game/components/Chunk.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/game/components/Inventory.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/Inventory.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/game/components/Inventory.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/game/components/Inventory.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/Map.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/game/components/Map.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/main.cpp.o -c /home/ollie/workspace/factory-game/src/main.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/main.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_demo.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_draw.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_stdlib.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_stdlib.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_tables.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_widgets.cpp",
+  "file": "/home/ollie/workspace/factory-game/third-party/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o"
+}
+]

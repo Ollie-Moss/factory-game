@@ -2,113 +2,130 @@
 #define MAP_GENERATOR_H
 
 #include <cmath>
-#include <glm/ext/vector_float2.hpp>
-#include <glm/ext/vector_float3.hpp>
-#include <glm/ext/vector_int3.hpp>
+#include <cstdlib>
+#include <glm/glm.hpp>
+#include <glm/gtx/compatibility.hpp>
 #include <glm/gtx/string_cast.hpp>
+#include <unordered_map>
+#include "../../engine/utils/glm_hash.hpp"
+#include "../utils/PerlinNoise.hpp"
+#include <queue>
 #include <vector>
+#include "../utils/GeneratorSettings.hpp"
 #include "../entities/TileEntity.hpp"
 
-#define CHUNK_SIZE 20
+#define CHUNK_SIZE 32
 #define maxPrimeIndex 10
 
-static int numOctaves = 7;
-static double persistence = 0.68;
+struct OrePatch {
+	glm::ivec2 center;
+	std::string type;
+	int radius;
+	float richness;
+};
 
-static int primeIndex = 0;
-
-static int primes[maxPrimeIndex][3] = {
-	{995615039, 600173719, 701464987},
-	{831731269, 162318869, 136250887},
-	{174329291, 946737083, 245679977},
-	{362489573, 795918041, 350777237},
-	{457025711, 880830799, 909678923},
-	{787070341, 177340217, 593320781},
-	{405493717, 291031019, 391950901},
-	{458904767, 676625681, 424452397},
-	{531736441, 939683957, 810651871},
-	{997169939, 842027887, 423882827}};
-
+// Modified MapGenerator Class with flexible noise settings
 class MapGenerator {
   public:
-	static std::vector<TileEntity *> Generate(int chunkX = 0, int chunkY = 0, int scaleFactor = 1) {
+	// Modified Generate function with noise parameters
+	static std::vector<TileEntity *> Generate(int chunkX = 0, int chunkY = 0, GeneratorSettings settings = {}) {
 		std::vector<TileEntity *> tiles;
+		std::unordered_map<glm::ivec2, std::string> tileMap;
+
 		int startX = chunkX * CHUNK_SIZE;
 		int startY = chunkY * CHUNK_SIZE;
 
-		if ((startX <= -2147483647 && startX + CHUNK_SIZE >= 2147483647) ||
-			(startY <= -2147483647 && startY + CHUNK_SIZE >= 2147483647))
-			return std::vector<TileEntity *>();
+		int increment = 1;
 
-        int increment = scaleFactor;
+		// --- Step 1: Terrain generation
+		for (int y = startY; y < startY + CHUNK_SIZE; y += increment) {
+			for (int x = startX; x < startX + CHUNK_SIZE; x += increment) {
+				double h = GetHeight(x, y,
+									 settings.terrainOctaves,
+									 settings.terrainPersistence,
+									 settings.terrainNoiseBias);
+				std::string tileId;
 
-		for (int y = startY; y < startY + CHUNK_SIZE; y+=increment) {
-			for (int x = startX; x < startX + CHUNK_SIZE; x+=increment) {
-				double noise = ValueNoise_2D(x + 2147483648, y + 2147483648);
+				if (h < 0.25)
+					tileId = "WATER_TILE";
+				else if (h < 0.28)
+					tileId = "SAND_TILE";
+				else
+					tileId = "GRASS_TILE_1";
 
-				if (noise < 0.2) {
-					TileEntity *tile = new TileEntity(glm::ivec3(x, y, 0), "GRASS_TILE_1");
-                    tile->GetComponent<TileTransform>()->size *= increment;
-					tiles.push_back(tile);
+				tileMap[glm::ivec2(x, y)] = tileId;
+			}
+		}
+
+		std::vector<OrePatch> orePatches = GenerateOreSpots(chunkX, chunkY, settings);
+		// Place ore after terrain tiles are filled
+		for (const auto &patch : orePatches) {
+			for (int dy = -patch.radius; dy <= patch.radius; ++dy) {
+				for (int dx = -patch.radius; dx <= patch.radius; ++dx) {
+					glm::ivec2 pos = patch.center + glm::ivec2(dx, dy);
+					if (glm::length(glm::vec2(dx, dy)) > patch.radius)
+						continue;
+
+					// Only overwrite grass
+					if (tileMap[pos] == "GRASS_TILE_1") {
+						// Add noise falloff or randomness if desired
+						tileMap[pos] = patch.type;
+					}
 				}
 			}
 		}
+
+		// --- Step 3: Finalize TileEntities
+		for (const auto &[pos, id] : tileMap) {
+			TileEntity *tile = new TileEntity(glm::ivec3(pos.x, pos.y, 0), id);
+			tile->GetComponent<TileTransform>()->size *= increment;
+			tiles.push_back(tile);
+		}
+
 		return tiles;
-	};
+	}
 
   private:
-	static double Noise(int i, int x, int y) {
-		int n = x + y * 57;
-		n = (n << 13) ^ n;
-		int a = primes[i][0], b = primes[i][1], c = primes[i][2];
-		int t = (n * (n * n * a + b) + c) & 0x7fffffff;
-		return 1.0 - (double)(t) / 1073741824.0;
+	// --- Heightmap and Ore Generation ---
+	static double GetHeight(int x, int y, int numOctaves, double persistence, double noiseBias) {
+		return glm::clamp((PerlinNoise::Noise(x + 100000, y + 100000, numOctaves, persistence) + noiseBias) * 1.7, 0.0, 1.0);
 	}
 
-	static double SmoothedNoise(int i, int x, int y) {
-		double corners = (Noise(i, x - 1, y - 1) + Noise(i, x + 1, y - 1) +
-						  Noise(i, x - 1, y + 1) + Noise(i, x + 1, y + 1)) /
-						 16,
-			   sides = (Noise(i, x - 1, y) + Noise(i, x + 1, y) + Noise(i, x, y - 1) +
-						Noise(i, x, y + 1)) /
-					   8,
-			   center = Noise(i, x, y) / 4;
-		return corners + sides + center;
-	}
+	static std::vector<OrePatch> GenerateOreSpots(int chunkX, int chunkY, GeneratorSettings settings, int seed = 1337) {
+		std::vector<OrePatch> patches;
+		int regionSize = 64;
+		int numSpots = 2 + rand() % 4; // Randomized per chunk
 
-	static double Interpolate(double a, double b, double x) { // cosine interpolation
-		double ft = x * 3.1415927,
-			   f = (1 - cos(ft)) * 0.5;
-		return a * (1 - f) + b * f;
-	}
+		for (int i = 0; i < numSpots; ++i) {
+			glm::ivec2 center = {
+				chunkX * CHUNK_SIZE + rand() % CHUNK_SIZE,
+				chunkY * CHUNK_SIZE + rand() % CHUNK_SIZE};
 
-	static double InterpolatedNoise(int i, double x, double y) {
-		int integer_X = x;
-		double fractional_X = x - integer_X;
-		int integer_Y = y;
-		double fractional_Y = y - integer_Y;
+			double height = GetHeight(center.x, center.y,
+									  settings.terrainOctaves,
+									  settings.terrainPersistence,
+									  settings.terrainNoiseBias);
+			if (height < 0.3)
+				continue; // Avoid water/sand
 
-		double v1 = SmoothedNoise(i, integer_X, integer_Y),
-			   v2 = SmoothedNoise(i, integer_X + 1, integer_Y),
-			   v3 = SmoothedNoise(i, integer_X, integer_Y + 1),
-			   v4 = SmoothedNoise(i, integer_X + 1, integer_Y + 1),
-			   i1 = Interpolate(v1, v2, fractional_X),
-			   i2 = Interpolate(v3, v4, fractional_X);
-		return Interpolate(i1, i2, fractional_Y);
-	}
+			int r = 3 + rand() % 5; // Radius 3–7
+			std::string type = "COAL_ORE_TILE";
+			switch (rand() % 3) {
+			case 0:
+				type = "IRON_ORE_TILE";
+				break;
+			case 1:
+				type = "COPPER_ORE_TILE";
+				break;
+			case 2:
+				type = "COAL_ORE_TILE";
+				break;
+			}
 
-	static double ValueNoise_2D(double x, double y) {
-		double total = 0,
-			   frequency = pow(2, numOctaves),
-			   amplitude = 1;
-		for (int i = 0; i < numOctaves; ++i) {
-			frequency /= 2;
-			amplitude *= persistence;
-			total += InterpolatedNoise((primeIndex + i) % maxPrimeIndex,
-									   x / frequency, y / frequency) *
-					 amplitude;
+			patches.push_back({center, type, r, 1.0f});
 		}
-		return total / frequency;
+		return patches;
 	}
 };
-#endif
+
+#endif // MAP_GENERATOR_H

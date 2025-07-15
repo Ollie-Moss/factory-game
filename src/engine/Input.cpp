@@ -1,9 +1,11 @@
 #include "Input.hpp"
 #include "Simplex.hpp"
+#include "imgui_impl_glfw.h"
 #include <GLFW/glfw3.h>
 #include <iostream>
 
 void Input::MouseButtonCallback(GLFWwindow *window, int button, int action, int mods) {
+    ImGui_ImplGlfw_MouseButtonCallback(window, button, action, mods);
 	Simplex::input.mouseButtonState[button] = action;
 }
 void Input::KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {

@@ -66,6 +66,11 @@ void ResourceManager::Init() {
 	// Tiles
 	LoadTexture("GRASS_TILE_1", 1.0f, "sprites/tiles/grass_tile_1.png");
 	LoadTexture("GRASS_TILE_2", 1.0f, "sprites/tiles/grass_tile_2.png");
+	LoadTexture("WATER_TILE", 1.0f, "sprites/tiles/water_tile.png");
+	LoadTexture("SAND_TILE", 1.0f, "sprites/tiles/sand_tile.png");
+	LoadTexture("COPPER_ORE_TILE", 1.0f, "sprites/tiles/copper_ore_tile.png");
+	LoadTexture("COAL_ORE_TILE", 1.0f, "sprites/tiles/coal_ore_tile.png");
+	LoadTexture("IRON_ORE_TILE", 1.0f, "sprites/tiles/iron_ore_tile.png");
 
     // Fonts
     LoadFont("Arial", "fonts/arial.ttf");
