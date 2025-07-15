@@ -1,0 +1,18 @@
+{
+    "items": {
+        "1": {
+            "display_name": "stone",
+            "stack_size": 100,
+            "type": "material"
+        }
+    },
+    "machines": {
+        "furnace": {
+            "display_name": "furnace",
+            "modules": [
+                "range"
+            ],
+            "power_usage": 0
+        }
+    }
+}
