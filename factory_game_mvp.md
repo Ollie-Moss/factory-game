@@ -23,8 +23,6 @@ All machines are modular and can be enhanced with configurable parts.
 
 | Machine         | Size | Power Usage | Description                                  |
 |----------------|------|-------------|----------------------------------------------|
-| Tree Farm Core | 3x3  | 50 W/tick   | Automates tree harvesting                    |
-| Planter        | 1x1  | 20 W/tick   | Replants saplings                            |
 | Furnace        | 1x1  | 30 W/tick   | Smelts ores                                  |
 | Assembler      | 2x2  | 40 W/tick   | Crafts items from recipes                    |
 | Inserter       | 1x1  | 5 W/tick    | Moves items between machines/belts          |
