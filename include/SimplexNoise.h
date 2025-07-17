@@ -31,7 +31,7 @@ public:
     /**
      * Constructor of to initialize a fractal noise summation
      *
-     * @param[in] frequency    Frequency ("width") of the first octave of noise (default to 1.0)
+     * @param[in] frequency    Frequency ("width") of the first octave of noise (default to 2.0)
      * @param[in] amplitude    Amplitude ("height") of the first octave of noise (default to 1.0)
      * @param[in] lacunarity   Lacunarity specifies the frequency multiplier between successive octaves (default to 2.0).
      * @param[in] persistence  Persistence is the loss of amplitude between successive octaves (usually 1/lacunarity)

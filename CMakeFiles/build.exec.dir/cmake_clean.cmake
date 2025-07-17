@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/build.exec.dir/src/game/components/Inventory.cpp.o.d"
   "CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o"
   "CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o.d"
+  "CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o"
+  "CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o.d"
   "CMakeFiles/build.exec.dir/src/main.cpp.o"
   "CMakeFiles/build.exec.dir/src/main.cpp.o.d"
   "CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o"

@@ -28,7 +28,7 @@ struct Camera : public IComponent {
 
 	float zoom = 50.0f;
 	float scrollSensitivity = 0.5f;
-	float maxZoom = 4.0f;
+	float maxZoom = 3.0f;
 
 	glm::vec2 lastMousePos = glm::vec2(0, 0);
 

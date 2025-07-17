@@ -15,7 +15,6 @@
 #include <imgui.h>
 #include <imgui_stdlib.h>
 
-
 struct Map : IComponent {
 	std::unordered_map<glm::ivec2, Entity *> chunks;
 	GeneratorSettings settings;
@@ -94,11 +93,19 @@ struct Map : IComponent {
 	}
 
 	void Update() override {
-        settings.DrawImGui();
-        if(settings.regenerateMap){
-            chunks.clear();
-            settings.regenerateMap = false;
-        }
+		ImGui::Begin("Map Generation Settings");
+		settings.DrawImGui();
+
+        ImGui::Text("Presets");
+		if (ImGui::Button("Balanced")) {
+			settings = WorldPresets::Balanced();
+		}
+        ImGui::End();
+
+		if (settings.regenerateMap) {
+			chunks.clear();
+			settings.regenerateMap = false;
+		}
 		GenerateChunks();
 		CullChunks();
 		for (auto chunk : chunks) {

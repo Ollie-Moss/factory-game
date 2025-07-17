@@ -79,6 +79,12 @@
 },
 {
   "directory": "/home/ollie/workspace/factory-game",
+  "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/MapGenerator.cpp",
+  "file": "/home/ollie/workspace/factory-game/src/game/components/MapGenerator.cpp",
+  "output": "CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o"
+},
+{
+  "directory": "/home/ollie/workspace/factory-game",
   "command": "/usr/bin/c++  -I/home/ollie/workspace/factory-game/include -I/home/ollie/workspace/factory-game/third_party/glfw/include -I/home/ollie/workspace/factory-game/third-party/imgui -I/home/ollie/workspace/factory-game/third_party/freetype/include -std=gnu++17 -o CMakeFiles/build.exec.dir/src/main.cpp.o -c /home/ollie/workspace/factory-game/src/main.cpp",
   "file": "/home/ollie/workspace/factory-game/src/main.cpp",
   "output": "CMakeFiles/build.exec.dir/src/main.cpp.o"

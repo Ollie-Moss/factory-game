@@ -251,10 +251,24 @@ CMakeFiles/build.exec.dir/src/game/components/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/build.exec.dir/src/game/components/Map.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ollie/workspace/factory-game/src/game/components/Map.cpp -o CMakeFiles/build.exec.dir/src/game/components/Map.cpp.s
 
+CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o: CMakeFiles/build.exec.dir/flags.make
+CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o: src/game/components/MapGenerator.cpp
+CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o -MF CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o.d -o CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o -c /home/ollie/workspace/factory-game/src/game/components/MapGenerator.cpp
+
+CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ollie/workspace/factory-game/src/game/components/MapGenerator.cpp > CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.i
+
+CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ollie/workspace/factory-game/src/game/components/MapGenerator.cpp -o CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.s
+
 CMakeFiles/build.exec.dir/src/main.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/build.exec.dir/src/main.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/build.exec.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/build.exec.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/src/main.cpp.o -MF CMakeFiles/build.exec.dir/src/main.cpp.o.d -o CMakeFiles/build.exec.dir/src/main.cpp.o -c /home/ollie/workspace/factory-game/src/main.cpp
 
 CMakeFiles/build.exec.dir/src/main.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/build.exec.dir/src/main.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o: third-party/imgui/imgui.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o: third-party/imgui/imgui_demo.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_demo.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o: third-party/imgui/imgui_draw.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_draw.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o: third-party/imgui/imgui_impl_glfw.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o: third-party/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_impl_opengl3.cpp.s: cmake_forc
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o: third-party/imgui/imgui_stdlib.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_stdlib.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_stdlib.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o: third-party/imgui/imgui_tables.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_tables.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/build.exec.dir/third-party/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o: CMakeFiles/build.exec.dir/flags.make
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o: third-party/imgui/imgui_widgets.cpp
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o: CMakeFiles/build.exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o -MF CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o -c /home/ollie/workspace/factory-game/third-party/imgui/imgui_widgets.cpp
 
 CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.i: cmake_force
@@ -392,6 +406,7 @@ build_exec_OBJECTS = \
 "CMakeFiles/build.exec.dir/src/game/components/Chunk.cpp.o" \
 "CMakeFiles/build.exec.dir/src/game/components/Inventory.cpp.o" \
 "CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o" \
+"CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o" \
 "CMakeFiles/build.exec.dir/src/main.cpp.o" \
 "CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o" \
 "CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o" \
@@ -418,6 +433,7 @@ build.exec: CMakeFiles/build.exec.dir/src/game/components/BuildSystem.cpp.o
 build.exec: CMakeFiles/build.exec.dir/src/game/components/Chunk.cpp.o
 build.exec: CMakeFiles/build.exec.dir/src/game/components/Inventory.cpp.o
 build.exec: CMakeFiles/build.exec.dir/src/game/components/Map.cpp.o
+build.exec: CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o
 build.exec: CMakeFiles/build.exec.dir/src/main.cpp.o
 build.exec: CMakeFiles/build.exec.dir/third-party/imgui/imgui.cpp.o
 build.exec: CMakeFiles/build.exec.dir/third-party/imgui/imgui_demo.cpp.o
@@ -430,7 +446,7 @@ build.exec: CMakeFiles/build.exec.dir/third-party/imgui/imgui_widgets.cpp.o
 build.exec: CMakeFiles/build.exec.dir/build.make
 build.exec: /usr/lib/x86_64-linux-gnu/libGL.so
 build.exec: CMakeFiles/build.exec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable build.exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ollie/workspace/factory-game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable build.exec"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/build.exec.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

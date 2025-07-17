@@ -441,6 +441,30 @@ src/game/components/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/src/game/components/Map.cpp.s
 .PHONY : src/game/components/Map.cpp.s
 
+src/game/components/MapGenerator.o: src/game/components/MapGenerator.cpp.o
+.PHONY : src/game/components/MapGenerator.o
+
+# target to build an object file
+src/game/components/MapGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.o
+.PHONY : src/game/components/MapGenerator.cpp.o
+
+src/game/components/MapGenerator.i: src/game/components/MapGenerator.cpp.i
+.PHONY : src/game/components/MapGenerator.i
+
+# target to preprocess a source file
+src/game/components/MapGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.i
+.PHONY : src/game/components/MapGenerator.cpp.i
+
+src/game/components/MapGenerator.s: src/game/components/MapGenerator.cpp.s
+.PHONY : src/game/components/MapGenerator.s
+
+# target to generate assembly for a file
+src/game/components/MapGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.exec.dir/build.make CMakeFiles/build.exec.dir/src/game/components/MapGenerator.cpp.s
+.PHONY : src/game/components/MapGenerator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -705,6 +729,9 @@ help:
 	@echo "... src/game/components/Map.o"
 	@echo "... src/game/components/Map.i"
 	@echo "... src/game/components/Map.s"
+	@echo "... src/game/components/MapGenerator.o"
+	@echo "... src/game/components/MapGenerator.i"
+	@echo "... src/game/components/MapGenerator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

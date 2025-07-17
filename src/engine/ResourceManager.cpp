@@ -66,6 +66,8 @@ void ResourceManager::Init() {
 	// Tiles
 	LoadTexture("GRASS_TILE_1", 1.0f, "sprites/tiles/grass_tile_1.png");
 	LoadTexture("GRASS_TILE_2", 1.0f, "sprites/tiles/grass_tile_2.png");
+	LoadTexture("GRASS_TILE_2", 1.0f, "sprites/tiles/grass_tile_2.png");
+
 	LoadTexture("WATER_TILE", 1.0f, "sprites/tiles/water_tile.png");
 	LoadTexture("SAND_TILE", 1.0f, "sprites/tiles/sand_tile.png");
 	LoadTexture("COPPER_ORE_TILE", 1.0f, "sprites/tiles/copper_ore_tile.png");
